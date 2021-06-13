@@ -1,0 +1,11 @@
+Berikut ini penjelasan singkat dari aplikasi chatbot yg saya rancang
+1. Program utama adalah Main.py
+2. Download terlebih dahulu paket NLTK, dengan cara run 'nltk.download()' di interpreter
+3. Folder 'Chat' berisi jawaban dari folder 'Documents'
+4. Folder 'Documents' berisi model pertanyaan
+5. Apabila user memiliki suatu pertanyaan, dan pertanyaan tersebut memiliki
+   kemiripan dengan model yang ada di folder 'Documents', 
+   maka jawaban dari bot adalah yang ada di folder 'Chat' sesuai dengan nama file model
+6. Apabila terjadi perubahan data di folder 'Documents' ataupun folder 'Chat'
+   maka harus dilakukan training untuk mengubah model, dengan run 'Training.py'
+

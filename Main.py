@@ -170,7 +170,9 @@ def respon_pengetahuan(chat) :
 root = Tk()
 root.config(bg="lightblue")
 root.title("Chatbot Mr S Ahli Sejarah VOC")
+bg = PhotoImage(file = "images/bot.png")
 canvas = Canvas(root, width=550, height=550,bg="silver")
+canvas.create_image( 0, 0, image = bg,anchor = "nw")
 canvas.grid(row=0,column=0,columnspan=2)
 bubbles = []
 class BotBubble:
@@ -200,6 +202,7 @@ class BotBubble_Send:
 def receive_message(respon):
     if bubbles:
         canvas.move(ALL, 0, -65)
+        canvas.create_image(0, 0, image=bg, anchor="nw")
     a = BotBubble(canvas,message=respon)
     bubbles.append(a)
 def masuk(chat):
@@ -239,6 +242,7 @@ def masuk(chat):
 def send_message():
     if bubbles:
         canvas.move(ALL, 0, -65)
+        canvas.create_image(0, 0, image=bg, anchor="nw")
     a = BotBubble_Send(canvas,message=entry.get())
     chat = entry.get()
     masuk(chat)
@@ -247,4 +251,3 @@ entry = Entry(root,width=60,font="Times")
 entry.grid(row=1,column=0)
 Button(root,text="Send",command=send_message,width = 5,font="Times").grid(row=1,column=1)
 root.mainloop()
-
