@@ -1,6 +1,5 @@
 Interpreter yang saya gunakan dalam sistem.
 
-
 Package         Version
 --------------- -------------
 click           7.1.2
