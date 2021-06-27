@@ -1,4 +1,4 @@
-Bu ini interpreter yang saya gunakan dalam sistem.
+Interpreter yang saya gunakan dalam sistem.
 
 
 Package         Version
